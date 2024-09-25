@@ -169,7 +169,7 @@
   <div class="hero-body">
     <div class="container">
       <div class="columns is-vcentered is-centered">
-        <div style="text-align: center; width: 80%;">
+        <div style="text-align: center; width: 60%;">
           <img src="media/figures/teaser.png" class="interpolation-image" style="width: 100%; height: auto;">
           <h2 class="subtitle has-text-centered" style="width: 100%; height: auto;">
             FEEPE achieves online, marker-free, training-free end-effector pose
@@ -310,46 +310,45 @@
 <div class="container is-max-widescreen">
 
   <div class="rows">
-    <h2 class="title is-3" style="text-align: center; width: 60%;">Online grasping experiment</h2>
+    <div style="max-width: 60%; margin: 0 auto; text-align: center;">
+      <h2 class="title is-3">Online grasping experiment</h2>
     
-    <p class="content" style="text-align: center;">
-      We conducted online grasping experiments, without any prior calibration, we directly use the estimated end-effector pose for visual servoing.
-    </p>
+      <p class="content">
+        We conducted online grasping experiments, without any prior calibration, we directly use the estimated end-effector pose for visual servoing.
+      </p>
+    </div>
     
-    <div class="columns">
-      <div class="column has-text-centered">
+    <div class="columns is-centered" style="max-width: 60%; margin: 0 auto;">
+      <div class="column has-text-centered" style="flex: 1;">
         <video id="dist1"
           controls
           muted
           autoplay
           loop
           width="100%">
-          <source src="media/videos/grasping1.mp4" 
-          type="video/mp4">
+          <source src="media/videos/grasping1.mp4" type="video/mp4">
         </video>
       </div>
 
-      <div class="column has-text-centered">
+      <div class="column has-text-centered" style="flex: 1;">
         <video id="dist2"
           controls
           muted
           autoplay
           loop
           width="100%">
-          <source src="media/videos/grasping2.mp4" 
-          type="video/mp4">
+          <source src="media/videos/grasping2.mp4" type="video/mp4">
         </video>
       </div>
 
-      <div class="column has-text-centered">
+      <div class="column has-text-centered" style="flex: 1;">
         <video id="dist3"
           controls
           muted
           autoplay
           loop
           width="100%">
-          <source src="media/videos/grasping3.mp4" 
-          type="video/mp4">
+          <source src="media/videos/grasping3.mp4" type="video/mp4">
         </video>
       </div>
     </div>
