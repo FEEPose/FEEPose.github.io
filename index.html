@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Foundation Feature-Driven Online End-Effector Pose Estimation: A Marker-Free and Learning-Free Approach">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FEEPE</title>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FV4ZJ9PVSV"></script>  
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-FV4ZJ9PVSV');
+  </script>
+
+  <script>
+
+    function updateInteractive() {
+      var task = document.getElementById("interative-menu").value;
+
+      console.log("interactive", task)
+
+      // if task does not contain the string "towel"
+      if (task.indexOf("towel") == -1) {
+        var video = document.getElementById("interactive-video");
+        video.src = "media/videos/" + 
+                    task + 
+                    ".mp4"
+        video.play();
+
+        var html = document.getElementById("interactive-html-1");
+        html.src = "media/interactive/" + 
+                    task + 
+                    ".html"
+
+        // hide the second iframe container
+        var iframeContainer2 = document.getElementById("second-iframe-container");
+        iframeContainer2.style.display = "none";
+      } else {
+        var video = document.getElementById("interactive-video");
+        video.src = "media/videos/hang-towel.mp4"
+        video.play();
+
+        var html1 = document.getElementById("interactive-html-1");
+        html1.src = "media/interactive/hang-towel-1.html"
+
+        // show and set the source for the second iframe
+        var html2 = document.getElementById("interactive-html-2");
+        html2.src = "media/interactive/hang-towel-2.html"
+
+        // show the second iframe container
+        var iframeContainer2 = document.getElementById("second-iframe-container");
+        iframeContainer2.style.display = "block";
+      }
+    }
+
+
+
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body onload="updateInteractive();">
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-fullhd">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Foundation Feature-Driven Online End-Effector Pose Estimation: A Marker-Free and Learning-Free Approach</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a target="_blank">Tianshu Wu</a><sup>1*</sup>,
+            </span>
+            <span class="author-block">
+              <a target="_blank" href="https://jiyao06.github.io/">Jiyao Zhang</a><sup>1*</sup>,
+            </span>
+            <span class="author-block">
+              <a target="_blank">Shiqian Liang</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a target="_blank" href="https://github.com/0nhc">Zhengxiao Han</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a target="_blank" href="https://zsdonghao.github.io/">Hao Dong</a><sup>1,&#x2709</sup>,
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Center on Frontiers of Computing Studies, School of Computer Science, Peking University</span>
+            <span class="author-block"><sup>*</sup>Equal Contribution</span>
+            <span class="author-block"><sup>&#x2709</sup>Corresponding Author</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a target="_blank" href="FEEPE.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+
+            <!-- Arxiv Link. -->
+            <!-- <span class="link-block">
+              <a target="_blank" href="https://arxiv.org/abs/2307.05973"
+                class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                    <i class="fas fa-file"></i>
+                </span>
+                <span>ArXiv</span>
+              </a>
+            </span> -->
+
+            <!-- Video Link. -->
+            <span class="link-block">
+              <a target="_blank" href=""
+                 class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                    <i class="fab fa-youtube"></i>
+                </span>
+                <span>Video</span>
+              </a>
+            </span>
+
+            <!-- Code Link. -->
+            <!-- <span class="link-block">
+              <a target="_blank" href="https://github.com/tianhaowuhz/DexFunPreGrasp"
+                class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                    <i class="fab fa-github"></i>
+                </span>
+                <span>Code</span>
+                </a>
+            </span> -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser"></section>
+  <div class="container is-fullhd">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-vcentered  is-centered">
+          <img src="media/figures/teaser.png" class="interpolation-image" style="width: 100%; height: 100%;"/>
+          </br>
+        </div>
+        <br>
+        <h2 class="subtitle has-text-centered">
+          The proposed FEEPE
+achieves online, marker-free, training-free end-effector pose
+estimation with cross-robot and cross-end-effector general-
+ization without requiring the robot to be fully visible.
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+
+  <!-- Paper video. -->
+  <br>
+  <br>
+  <div class="column has-text-centered">
+    <video id="dist1"
+      controls
+      muted
+      autoplay
+      loop
+      width="99%">
+      <source src="media/videos/FEEPE_supp.mp4" 
+      type="video/mp4">
+    </video>
+    <p style="text-align:center">
+      "Sort the paper trash into the blue tray."
+    </p>
+  </div>
+
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Accurate transformation estimation between camera space and robot space is essential. Traditional methods using markers for hand-eye calibration require offline image 
+			collection, limiting their suitability for online self-calibration. Recent learning-based 
+			robot pose estimation methods, while advancing online calibration, struggle with 
+			cross-robot generalization and require the robot to be fully visible.
+			This work proposes a Foundation feature-driven online End-Effector Pose Estimation(FEEPE)
+			algorithm, characterized by its training-free and cross end-effector generalization 
+			capabilities. Inspired by the zero-shot generalization capabilities of foundation models, 
+			FEEPE leverages pre-trained visual features to estimate 2D-3D correspondences derived 
+			from CAD models and reference images,enabling 6D pose estimation via the PnP algorithm. 
+			To resolve ambiguities from partial observations and symmetry, a multi-historical 
+			key frame enhanced pose optimization algorithm is introduced, utilizing temporal information 
+			for improved accuracy. Compared to traditional hand-eye calibration, FEEPE enables
+			marker-free online calibration. Unlike robot pose estimation,it generalizes across 
+			robots and end-effectors in a training-free manner. Extensive experiments demonstrate
+			its superiorflexibility, generalization, and performance. 
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+  </div>
+</section>
+
+<section class="hero teaser"></section>
+  <div class="container is-fullhd">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-vcentered  is-centered">
+          <img src="media/figures/method.png" class="interpolation-image" style="width: 100%; height: 100%;"/>
+          </br>
+        </div>
+        <br>
+        <h2 class="subtitle has-text-centered">
+          Given the 3D model of the end-effector and a target image, we first render templates from
+          various viewpoints. Using foundation features, we find the top Kr references most similar to the target image and compute
+          2D-3D matches and pose candidates. To address ambiguities from partial observations, we introduce a global
+          memory pool that records key frames and robot states for pose optimization. To resolve
+          ambiguities from symmetry, we propose a symmetry disambiguation module to eliminate incorrect matches.
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section"></section>
+  <div class="container is-max-widescreen">
+
+    <div class="rows">
+      <h2 class="title is-3">High-precision targeting experiment</h2>
+      
+      <p class="content has-text-justified">
+        our approach achieves an accuracy within 1mm with calibration using 15 frames.
+      </p>
+      
+      <div class="columns">
+        <div class="column has-text-centered">
+          <video id="dist1"
+            controls
+            muted
+            autoplay
+            loop
+            width="99%">
+            <source src="media/videos/targeting.mp4" 
+            type="video/mp4">
+          </video>
+          <p style="text-align:center">
+            "Sort the paper trash into the blue tray."
+          </p>
+        </div>
+  </div>
+  </div>
+</section>
+
+<section class="section"></section>
+  <div class="container is-max-widescreen">
+
+    <div class="rows">
+      <h2 class="title is-3">Online grasping experiment</h2>
+      
+      <p class="content has-text-justified">
+        We conducted online grasping experiments,without any prior calibration, we directly use the estimated ene-effector pose for visual servoing.
+      </p>
+      
+      <div class="columns">
+        <div class="column has-text-centered">
+          <video id="dist1"
+            controls
+            muted
+            autoplay
+            loop
+            width="99%">
+            <source src="media/videos/grasping1.mp4" 
+            type="video/mp4">
+          </video>
+          <!-- <p style="text-align:center">
+            "Sort the paper trash into the blue tray."
+          </p> -->
+        </div>
+    
+      <div class="column has-text-centered">
+        <video id="dist2"
+          controls
+          muted
+          autoplay
+          loop
+          width="99%">
+          <source src="media/videos/grasping2.mp4" 
+          type="video/mp4">
+        </video>
+        <!-- <p style="text-align:center">
+          "Close the top drawer."
+        </p> -->
+      </div>
+
+      <div class="column has-text-centered">
+        <video id="dist2"
+          controls
+          muted
+          autoplay
+          loop
+          width="99%">
+          <source src="media/videos/grasping3.mp4" 
+          type="video/mp4">
+        </video>
+        <!-- <p style="text-align:center">
+          "Close the top drawer."
+        </p> -->
+      </div>
+  </div>
+  </div>
+</section>
