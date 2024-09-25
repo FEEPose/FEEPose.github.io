@@ -169,11 +169,11 @@
     <div class="hero-body">
       <div class="container">
         <div class="columns is-vcentered  is-centered">
-          <img src="media/figures/teaser.png" class="interpolation-image"  style="width: 60%; height: auto;"/>
+          <img src="media/figures/teaser.png" class="interpolation-image"  style="width: 80%; height: auto;"/>
           </br>
         </div>
         <br>
-        <h2 class="subtitle has-text-centered">
+        <h2 class="subtitle has-text-centered" style="width: 80%; height: auto;">
           The proposed FEEPE
 achieves online, marker-free, training-free end-effector pose
 estimation with cross-robot and cross-end-effector general-
@@ -191,7 +191,11 @@ ization without requiring the robot to be fully visible.
   <br>
   <div class="column has-text-centered">
     <video id="dist1"
-    autoplay muted loop height="60%" width="60%">
+    controls
+    muted
+    autoplay
+    loop
+    width="60%">>
       <source src="media/videos/FEEPE_supp.mp4" 
       type="video/mp4">
     </video>
@@ -240,7 +244,7 @@ ization without requiring the robot to be fully visible.
           </br>
         </div>
         <br>
-        <h2 class="subtitle has-text-centered">
+        <h2 class="subtitle has-text-centered" style="max-width: 60%; margin: 0 auto;">
           Given the 3D model of the end-effector and a target image, we first render templates from
           various viewpoints. Using foundation features, we find the top Kr references most similar to the target image and compute
           2D-3D matches and pose candidates. To address ambiguities from partial observations, we introduce a global
